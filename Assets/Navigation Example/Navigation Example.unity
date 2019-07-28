@@ -4453,6 +4453,7 @@ GameObject:
   - component: {fileID: 1847276961}
   - component: {fileID: 1847276967}
   - component: {fileID: 1847276969}
+  - component: {fileID: 1847276971}
   m_Layer: 9
   m_Name: AI Entity
   m_TagString: Untagged
@@ -4574,7 +4575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9cb6466cccd4ee9bdb56e299dde4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStateType: 1
+  _currentStateType: 3
   _targetTrigger: {fileID: 870597570}
   _sensorTrigger: {fileID: 63466202}
   _stoppingDistance: 1
@@ -4630,6 +4631,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1847276971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847276960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19730e44fcbcd474bb2c3511ebede6f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waypointNetwork: {fileID: 495687377}
+  _randomPatrol: 0
+  _currentWaypoint: 0
+  _turnOnSpotThreshold: 360
+  _slerpSpeed: 5
+  _speed: 1
 --- !u!1 &1847276972
 GameObject:
   m_ObjectHideFlags: 0
