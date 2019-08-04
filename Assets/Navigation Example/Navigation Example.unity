@@ -4454,6 +4454,7 @@ GameObject:
   - component: {fileID: 1847276967}
   - component: {fileID: 1847276969}
   - component: {fileID: 1847276971}
+  - component: {fileID: 1847276973}
   m_Layer: 9
   m_Name: AI Entity
   m_TagString: Untagged
@@ -4665,6 +4666,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1847276973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847276960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9248a4232c04024b8a74b066a14d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxDuration: 10
+  _waypointAngleThreshold: 90
+  _threatAngleThreshold: 10
 --- !u!1 &1847276974
 GameObject:
   m_ObjectHideFlags: 0
@@ -7203,9 +7219,9 @@ Animator:
     Humanoid clips.\n\tTransform 'Hips'\n\tTransform 'Spine1'\n\tTransform 'LeftHandMiddle2'\n\tTransform
     'Neck'\n\tTransform 'LeftHandThumb1'\n\tTransform 'Head'\n\tTransform 'LeftHandRing2'\n\tTransform
     'RightHandIndex3'\n\tTransform 'LeftHandRing3'\n\tTransform 'RightHandMiddle1'\n\tand
-    more ...\n\tFrom animation clip 'zombie_walk'\n\tFrom animation clip 'zombie_run'\n\tFrom
-    animation clip 'zombie_running'\n\tFrom animation clip 'zombie_crawl'\n\tFrom
-    animation clip 'zombie_crawl'"
+    more ...\n\tFrom animation clip 'zombie_crawl'\n\tFrom animation clip 'zombie_crawl'\n\tFrom
+    animation clip 'zombie_running'\n\tFrom animation clip 'zombie_run'\n\tFrom animation
+    clip 'zombie_walk'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
