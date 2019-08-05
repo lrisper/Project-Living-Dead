@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 // ----------------------------------------------------------------------
 // CLASS : AIZombieState_Idle1
@@ -94,7 +93,10 @@ public class AIZombieState_Idle1 : AIZombieState
         // Patrol if idle time has been exceeded
         if (_timer > _idleTime)
         {
-            return AIStateType.Patrol;
+            _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(false));
+            //_zombieStateMachine.navAgent.Resume();
+            _zombieStateMachine.navAgent.isStopped = false;
+            return AIStateType.Alerted;
         }
 
         // No state change required

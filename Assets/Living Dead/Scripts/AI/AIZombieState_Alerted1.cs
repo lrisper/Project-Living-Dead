@@ -60,7 +60,8 @@ public class AIZombieState_Alerted1 : AIZombieState
         if (_timer <= 0.0f)
         {
             _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(false));
-            _zombieStateMachine.navAgent.Resume();
+            //_zombieStateMachine.navAgent.Resume();
+            _zombieStateMachine.navAgent.isStopped = false;
             _timer = _maxDuration;
         }
 
