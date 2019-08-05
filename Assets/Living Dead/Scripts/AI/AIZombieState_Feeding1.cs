@@ -85,7 +85,9 @@ public class AIZombieState_Feeding1 : AIZombieState
                     ParticleSystem system = GameSceneManager.instance.bloodParticles;
                     system.transform.position = _bloodParticlesMount.transform.position;
                     system.transform.rotation = _bloodParticlesMount.transform.rotation;
+#pragma warning disable CS0618 // Type or member is obsolete
                     system.simulationSpace = ParticleSystemSimulationSpace.World;
+#pragma warning restore CS0618 // Type or member is obsolete
 
                     system.Emit(_bloodParticlesBurstAmount);
                     _timer = 0.0f;
